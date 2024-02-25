@@ -26,6 +26,7 @@ local plugins = {
       "mfussenegger/nvim-dap",
     },
     opts = {
+      ensure_installed = {'go', 'delve'},
       handlers = {},
     }
   },
@@ -46,6 +47,10 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "gopls",
+        "golines",
+        "goimports",
+        "gofumpt",
         "clangd",
         "clang-format",
         "codelldb",
@@ -85,6 +90,7 @@ local plugins = {
         "typescript",
         "tsx",
         "cpp",
+        "go",
       }
       return opts
     end,
